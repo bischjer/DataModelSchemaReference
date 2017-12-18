@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "description": "Network Structure",
+    "type": "object",    
+    "title": "Network Structure",
+    "properties": {
+        "network_type": {
+            'type': 'string',
+            'allowed': ["LAN", "WAN", "EPN", "VPN"],
+            'required': True
+        }
+    }
+}
