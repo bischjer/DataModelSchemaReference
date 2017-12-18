@@ -6,7 +6,7 @@
     "properties": {
         "network_type": {
             'type': 'string',
-            'allowed': ["LAN", "WAN", "EPN", "VPN"],
+            'allowed': ["LAN", "WAN", "MAN", "VPN", "IAN"],
             'required': True
         }
     }

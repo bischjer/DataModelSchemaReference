@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "description": "Network interface",
+    "type": "object",    
+    "title": "Network interface",
+    "properties": {
+        "ipv4": "string",
+        "ipv6": "string",
+        "mac": "string",
+        "connection": {
+            "type": "string",
+            'allowed': ["ethernet", "wi-fi", "fibre-channel",
+                        "atm", "fddi", "Token-ring"],
+            'required': True
+        }
+    }
+    "speeds": {
+        "type": "list",
+        "default": [10,100,1000]
+    }
+}

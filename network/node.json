@@ -11,22 +11,8 @@
         },
         "interfaces": [
             {
-                "network_interface_controller": {
-                    "ipv4": "string",
-                    "ipv6": "string",
-                    "mac": "string",
-                    "connection": {
-                        "type": "string",
-                        'allowed': ["ethernet", "wi-fi", "fibre-channel",
-                                    "atm", "fddi", "Token-ring"],
-                        'required': True
-                    }
-                }
+                "type": "object"
             }
-        ],
-        "speeds": {
-            "type": "list",
-            "default": [10,100,1000]
-        }
+        ]
     }
 }
